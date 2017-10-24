@@ -26,17 +26,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    choosefilewindow.cpp \
-    settingswindow.cpp \
-    childwindow.cpp
+    childwindow.cpp \
+    inputchoicewindow.cpp \
+    outputchoicewindow.cpp \
+    summarywindow.cpp \
+    resultwindow.cpp \
+    timessettingswindow.cpp
 
 HEADERS += \
         mainwindow.h \
-    choosefilewindow.h \
-    settingswindow.h \
-    childwindow.h
+    childwindow.h \
+    inputchoicewindow.h \
+    outputchoicewindow.h \
+    timessettingswindow.h \
+    summarywindow.h \
+    resultwindow.h
 
 FORMS += \
         mainwindow.ui \
-    choosefilewindow.ui \
-    settingswindow.ui
+    inputchoicewindow.ui \
+    outputchoicewindow.ui \
+    timessettingswindow.ui \
+    summarywindow.ui \
+    resultwindow.ui

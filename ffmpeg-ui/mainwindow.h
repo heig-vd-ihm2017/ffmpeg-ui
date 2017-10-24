@@ -2,11 +2,16 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <choosefilewindow.h>
-#include <settingswindow.h>
 
-namespace Ui {
-class MainWindow;
+#include <inputchoicewindow.h>
+#include <timessettingswindow.h>
+#include <outputchoicewindow.h>
+#include <summarywindow.h>
+#include <resultwindow.h>
+
+namespace Ui
+{
+    class MainWindow;
 }
 
 /**
@@ -22,7 +27,7 @@ class MainWindow : public QMainWindow
 
 public:
     // enum to list windows
-    enum WidgetWindow {MAIN_WINDOW, CHOOSE_FILE_WINDOW, SETTINGS_WINDOW };
+    enum WidgetWindow {MAIN_WINDOW, INPUT_CHOICE_WINDOW, TIMES_SETTINGS_WINDOW, OUTPUT_CHOICE_WINDOW, SUMMARY_WINDOW, RESULT_WINDOW };
 
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
@@ -37,17 +42,19 @@ public:
 
 private slots:
     /**
-     * @brief on_getStarted_clicked action executed when the button getStarted
-     * is clicked.
+     * @brief on_back_clicked Go to the previous step.
      */
-    void on_getStarted_clicked();
+    void on_next_clicked();
 
 private:
     Ui::MainWindow *ui;
 
     // Children windows
-    ChooseFileWindow chooseFileWindow;
-    SettingsWindow settingsWindow;
+    InputChoiceWindow inputChoiceWindow;
+    TimesSettingsWindow timessettingsWindow;
+    OutputChoiceWindow outputChoiceWindow;
+    SummaryWindow summaryWindow;
+    ResultWindow resultWindow;
 };
 
 #endif // MAINWINDOW_H

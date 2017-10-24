@@ -8,12 +8,18 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     // Set main window to children
-    chooseFileWindow.setMainWindow(this);
-    settingsWindow.setMainWindow(this);
+    inputChoiceWindow.setMainWindow(this);
+    timessettingsWindow.setMainWindow(this);
+    outputChoiceWindow.setMainWindow(this);
+    summaryWindow.setMainWindow(this);
+    resultWindow.setMainWindow(this);
 
     // Insert the widget windows in order
-    ui->stackedWidget->addWidget(&chooseFileWindow);
-    ui->stackedWidget->addWidget(&settingsWindow);
+    ui->stackedWidget->addWidget(&inputChoiceWindow);
+    ui->stackedWidget->addWidget(&timessettingsWindow);
+    ui->stackedWidget->addWidget(&outputChoiceWindow);
+    ui->stackedWidget->addWidget(&summaryWindow);
+    ui->stackedWidget->addWidget(&resultWindow);
 }
 
 MainWindow::~MainWindow()
@@ -26,7 +32,7 @@ void MainWindow::setCurrentWindow(MainWindow::WidgetWindow windowEnum)
     ui->stackedWidget->setCurrentIndex(windowEnum);
 }
 
-void MainWindow::on_getStarted_clicked()
+void MainWindow::on_next_clicked()
 {
-    setCurrentWindow(CHOOSE_FILE_WINDOW);
+    setCurrentWindow(INPUT_CHOICE_WINDOW);
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultWindow</class>
+ <widget class="QWidget" name="ResultWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>201</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>34</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="restart">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>340</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

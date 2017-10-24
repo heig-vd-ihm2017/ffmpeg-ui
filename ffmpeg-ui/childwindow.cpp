@@ -1,5 +1,5 @@
-#include <childwindow.h>
-#include <mainwindow.h>
+#include "childwindow.h"
+#include "mainwindow.h"
 
 ChildWindow::ChildWindow()
 {
