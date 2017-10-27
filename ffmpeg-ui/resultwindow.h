@@ -31,6 +31,8 @@ public:
 private slots:
     void on_restart_clicked();
 
+    void on_exit_clicked();
+
 private:
     Ui::ResultWindow *ui;
 };

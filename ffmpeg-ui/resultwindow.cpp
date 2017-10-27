@@ -18,3 +18,8 @@ void ResultWindow::on_restart_clicked()
 {
     getMainWindow()->setCurrentWindow(MainWindow::MAIN_WINDOW);
 }
+
+void ResultWindow::on_exit_clicked()
+{
+    exit(EXIT_SUCCESS);
+}

@@ -110,19 +110,6 @@
             <string>Next</string>
            </property>
           </widget>
-          <widget class="QPushButton" name="exit">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>370</y>
-             <width>80</width>
-             <height>23</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Exit</string>
-           </property>
-          </widget>
          </widget>
         </item>
        </layout>
