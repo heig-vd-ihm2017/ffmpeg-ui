@@ -113,7 +113,7 @@
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The input file is invalid. Please select another one.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="tooltip">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -144,7 +144,7 @@
           <height>31</height>
          </rect>
         </property>
-        <property name="placeholderText">
+        <property name="placeholderText" stdset="0">
          <string>Choose an input file...</string>
         </property>
        </widget>

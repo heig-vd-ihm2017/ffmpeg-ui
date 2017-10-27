@@ -23,7 +23,15 @@ class SummaryWindow : public QWidget, public ChildWindow
     Q_OBJECT
 
 public:
+    /**
+     * @brief SummaryWindow
+     * @param parent The parent of the current window.
+     */
     explicit SummaryWindow(QWidget *parent = 0);
+
+    /**
+     * Destructor.
+     */
     ~SummaryWindow();
 
 private slots:

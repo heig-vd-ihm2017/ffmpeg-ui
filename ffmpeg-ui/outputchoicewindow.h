@@ -21,7 +21,15 @@ class OutputChoiceWindow : public QWidget, public ChildWindow
     Q_OBJECT
 
 public:
+    /**
+     * @brief OutputChoiceWindow
+     * @param parent The parent of the current window.
+     */
     explicit OutputChoiceWindow(QWidget *parent = 0);
+
+    /**
+     * Destructor.
+     */
     ~OutputChoiceWindow();
 
 private slots:

@@ -11,6 +11,9 @@ class MainWindow;
 class ChildWindow
 {
 public:
+    /**
+     * @brief ChildWindow Constructor.
+     */
     ChildWindow();
 
     /**

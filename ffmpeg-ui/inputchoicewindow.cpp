@@ -8,6 +8,9 @@ InputChoiceWindow::InputChoiceWindow(QWidget *parent) :
     ui(new Ui::InputChoiceWindow)
 {
     ui->setupUi(this);
+
+    ui->error->setHidden(true);
+    ui->tooltip->setHidden(true);
 }
 
 InputChoiceWindow::~InputChoiceWindow()

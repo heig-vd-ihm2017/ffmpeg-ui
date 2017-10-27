@@ -29,7 +29,15 @@ public:
     // enum to list windows
     enum WidgetWindow {MAIN_WINDOW, INPUT_CHOICE_WINDOW, TIMES_SETTINGS_WINDOW, OUTPUT_CHOICE_WINDOW, SUMMARY_WINDOW, RESULT_WINDOW };
 
+    /**
+     * @brief MainWindow Constructor.
+     * @param parent The parent of the current window.
+     */
     explicit MainWindow(QWidget *parent = 0);
+
+    /**
+     * Destructor.
+     */
     ~MainWindow();
 
     /**

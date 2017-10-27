@@ -7,6 +7,10 @@ TimesSettingsWindow::TimesSettingsWindow(QWidget *parent) :
     ui(new Ui::TimesSettingsWindow)
 {
     ui->setupUi(this);
+
+    ui->errorStartTime->setHidden(true);
+    ui->errorEndTime->setHidden(true);
+    ui->tooltip->setHidden(true);
 }
 
 TimesSettingsWindow::~TimesSettingsWindow()

@@ -8,6 +8,9 @@ OutputChoiceWindow::OutputChoiceWindow(QWidget *parent) :
     ui(new Ui::OutputChoiceWindow)
 {
     ui->setupUi(this);
+
+    ui->error->setHidden(true);
+    ui->tooltip->setHidden(true);
 }
 
 OutputChoiceWindow::~OutputChoiceWindow()

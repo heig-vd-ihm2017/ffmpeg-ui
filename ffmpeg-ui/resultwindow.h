@@ -25,12 +25,26 @@ class ResultWindow : public QWidget, public ChildWindow
     Q_OBJECT
 
 public:
+    /**
+     * @brief ResultWindow
+     * @param parent The parent of the current window.
+     */
     explicit ResultWindow(QWidget *parent = 0);
+
+    /**
+     * Destructor.
+     */
     ~ResultWindow();
 
 private slots:
+    /**
+     * @brief on_restart_clicked Restart the whole process.
+     */
     void on_restart_clicked();
 
+    /**
+     * @brief on_exit_clicked Exit the application.
+     */
     void on_exit_clicked();
 
 private:

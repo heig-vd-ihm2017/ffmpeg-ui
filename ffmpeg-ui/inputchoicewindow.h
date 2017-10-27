@@ -2,6 +2,9 @@
 #define INPUTCHOICEWINDOW_H
 
 #include <QWidget>
+#include <QLabel>
+#include <QPushButton>
+#include <QPlainTextEdit>
 
 #include <childwindow.h>
 
@@ -21,7 +24,15 @@ class InputChoiceWindow : public QWidget, public ChildWindow
     Q_OBJECT
 
 public:
+    /**
+     * @brief InputChoiceWindow Constructor.
+     * @param parent The parent of the current window.
+     */
     explicit InputChoiceWindow(QWidget *parent = 0);
+
+    /**
+     * Destructor.
+     */
     ~InputChoiceWindow();
 
 private slots:
