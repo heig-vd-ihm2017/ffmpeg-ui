@@ -113,7 +113,7 @@
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The output file is invalid. Please select another one.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="tooltip">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -161,7 +161,7 @@
          <string>Choose...</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="properties">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -180,7 +180,7 @@
          <string>Properties</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="inputFileLabel">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -193,7 +193,7 @@
          <string>Input file:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="startTimeLabel">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -206,7 +206,7 @@
          <string>Start time:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="endTimeLabel">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -219,7 +219,7 @@
          <string>End time:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="inputFileValue">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -232,7 +232,7 @@
          <string>[The input file]</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_7">
+       <widget class="QLabel" name="startTimeValue">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -245,7 +245,7 @@
          <string>[The start time to begin the cut]</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_8">
+       <widget class="QLabel" name="endTimeValue">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -258,7 +258,7 @@
          <string>[The end time to end the cut]</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_9">
+       <widget class="QLabel" name="totalTimeLabel">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -271,7 +271,7 @@
          <string>Total time:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_10">
+       <widget class="QLabel" name="totalTimeValue">
         <property name="geometry">
          <rect>
           <x>120</x>
