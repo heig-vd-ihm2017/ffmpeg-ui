@@ -36,3 +36,13 @@ void MainWindow::on_next_clicked()
 {
     setCurrentWindow(INPUT_CHOICE_WINDOW);
 }
+
+void MainWindow::on_actionExit_triggered()
+{
+    exit(EXIT_SUCCESS);
+}
+
+void MainWindow::on_exit_clicked()
+{
+    exit(EXIT_SUCCESS);
+}

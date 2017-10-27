@@ -46,6 +46,10 @@ private slots:
      */
     void on_next_clicked();
 
+    void on_actionExit_triggered();
+
+    void on_exit_clicked();
+
 private:
     Ui::MainWindow *ui;
 
