@@ -6,6 +6,8 @@
 
 QT       += core gui
 
+CONFIG   += c++17
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ffmpeg-ui
@@ -31,7 +33,8 @@ SOURCES += \
     outputchoicewindow.cpp \
     summarywindow.cpp \
     resultwindow.cpp \
-    timessettingswindow.cpp
+    timessettingswindow.cpp \
+    settingscontainer.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -40,7 +43,8 @@ HEADERS += \
     outputchoicewindow.h \
     timessettingswindow.h \
     summarywindow.h \
-    resultwindow.h
+    resultwindow.h \
+    settingscontainer.h
 
 FORMS += \
         mainwindow.ui \

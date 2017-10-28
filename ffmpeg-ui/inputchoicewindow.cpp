@@ -9,8 +9,12 @@ InputChoiceWindow::InputChoiceWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->error->setHidden(true);
-    ui->tooltip->setHidden(true);
+    // Fais crasher le programme car SettingsContainer n'est pas encore initialisé je crois...
+    /*
+    ui->inputFileText->setPlainText(getSettingsContainer()->getInputFilePath());
+    */
+
+    resetErrors();
 }
 
 InputChoiceWindow::~InputChoiceWindow()
@@ -18,12 +22,45 @@ InputChoiceWindow::~InputChoiceWindow()
     delete ui;
 }
 
+void InputChoiceWindow::resetErrors()
+{
+    setNumberOfTriesToNextStep();
+
+    // Hide the errors
+    ui->error->setHidden(true);
+    ui->tooltip->setHidden(true);
+}
+
 void InputChoiceWindow::on_back_clicked()
 {
+    resetErrors();
+
     getMainWindow()->setCurrentWindow(MainWindow::MAIN_WINDOW);
 }
 
 void InputChoiceWindow::on_next_clicked()
 {
-    getMainWindow()->setCurrentWindow(MainWindow::TIMES_SETTINGS_WINDOW);
+    // Get the inputs
+    QString inputFilePath = ui->inputFileText->toPlainText();
+
+    // Check if the file is valid
+    if (true) {
+
+        resetErrors();
+
+        // Save the settings
+        getSettingsContainer()->setInputFilePath(inputFilePath);
+
+        // Go to next window
+        getMainWindow()->setCurrentWindow(MainWindow::TIMES_SETTINGS_WINDOW);
+    }
+    else {
+
+        // Show errors
+        ui->error->setHidden(false);
+
+        if (getNumberOfTriesToNextStep() >= 2) {
+            ui->tooltip->setHidden(false);
+        }
+    }
 }

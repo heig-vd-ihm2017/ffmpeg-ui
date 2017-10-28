@@ -135,7 +135,7 @@
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QPlainTextEdit" name="inputFileText">
+       <widget class="QPlainTextEdit" name="outputFileText">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -148,7 +148,7 @@
          <string>Choose an input file...</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="inputFileButton">
+       <widget class="QPushButton" name="outputFileButton">
         <property name="geometry">
          <rect>
           <x>470</x>

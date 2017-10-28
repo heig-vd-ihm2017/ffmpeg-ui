@@ -1,9 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "settingscontainer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    settingsContainer(new SettingsContainer)
 {
     ui->setupUi(this);
 
@@ -13,6 +15,13 @@ MainWindow::MainWindow(QWidget *parent) :
     outputChoiceWindow.setMainWindow(this);
     summaryWindow.setMainWindow(this);
     resultWindow.setMainWindow(this);
+
+    // Set settings container to children
+    inputChoiceWindow.setSettingsContainer(settingsContainer);
+    timessettingsWindow.setSettingsContainer(settingsContainer);
+    outputChoiceWindow.setSettingsContainer(settingsContainer);
+    summaryWindow.setSettingsContainer(settingsContainer);
+    resultWindow.setSettingsContainer(settingsContainer);
 
     // Insert the widget windows in order
     ui->stackedWidget->addWidget(&inputChoiceWindow);
@@ -25,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete settingsContainer;
 }
 
 void MainWindow::setCurrentWindow(MainWindow::WidgetWindow windowEnum)

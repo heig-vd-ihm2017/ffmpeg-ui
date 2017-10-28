@@ -16,6 +16,7 @@ ResultWindow::~ResultWindow()
 
 void ResultWindow::on_restart_clicked()
 {
+    getSettingsContainer()->reset();
     getMainWindow()->setCurrentWindow(MainWindow::MAIN_WINDOW);
 }
 

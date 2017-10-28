@@ -3,11 +3,12 @@
 
 #include <QMainWindow>
 
-#include <inputchoicewindow.h>
-#include <timessettingswindow.h>
-#include <outputchoicewindow.h>
-#include <summarywindow.h>
-#include <resultwindow.h>
+#include "inputchoicewindow.h"
+#include "outputchoicewindow.h"
+#include "resultwindow.h"
+#include "settingscontainer.h"
+#include "summarywindow.h"
+#include "timessettingswindow.h"
 
 namespace Ui
 {
@@ -54,10 +55,15 @@ private slots:
      */
     void on_next_clicked();
 
+    /**
+     * @brief on_actionExit_triggered Exit the program.
+     */
     void on_actionExit_triggered();
 
 private:
     Ui::MainWindow *ui;
+
+    SettingsContainer *settingsContainer;
 
     // Children windows
     InputChoiceWindow inputChoiceWindow;
