@@ -34,7 +34,8 @@ SOURCES += \
     summarywindow.cpp \
     resultwindow.cpp \
     timessettingswindow.cpp \
-    settingscontainer.cpp
+    settingscontainer.cpp \
+    video.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -44,7 +45,8 @@ HEADERS += \
     timessettingswindow.h \
     summarywindow.h \
     resultwindow.h \
-    settingscontainer.h
+    settingscontainer.h \
+    video.h
 
 FORMS += \
         mainwindow.ui \
@@ -53,3 +55,5 @@ FORMS += \
     timessettingswindow.ui \
     summarywindow.ui \
     resultwindow.ui
+
+LIBS += -lavutil -lavcodec -lavformat -lswscale
