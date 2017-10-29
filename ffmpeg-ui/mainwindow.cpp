@@ -40,6 +40,34 @@ MainWindow::~MainWindow()
 void MainWindow::setCurrentWindow(MainWindow::WidgetWindow windowEnum)
 {
     ui->stackedWidget->setCurrentIndex(windowEnum);
+
+    // Call windows init
+    switch(windowEnum) {
+        case INPUT_CHOICE_WINDOW:
+            inputChoiceWindow.initWindow();
+        break;
+
+        case TIMES_SETTINGS_WINDOW:
+            timessettingsWindow.initWindow();
+        break;
+
+        case OUTPUT_CHOICE_WINDOW:
+            outputChoiceWindow.initWindow();
+        break;
+
+        case RESULT_WINDOW:
+            resultWindow.initWindow();
+        break;
+
+        case SUMMARY_WINDOW:
+            summaryWindow.initWindow();
+        break;
+
+        default:
+
+        break;
+
+    }
 }
 
 void MainWindow::on_next_clicked()

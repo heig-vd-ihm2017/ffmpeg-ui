@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include <childwindow.h>
+#include <QRegularExpression>
 
 namespace Ui
 {
@@ -39,6 +40,12 @@ public:
      */
     void resetErrors();
 
+    /**
+     * @override
+     * @brief initWindow init the content of the window
+     */
+    void initWindow();
+
 private slots:
     /**
      * @brief on_back_clicked Go to the previous step.
@@ -52,6 +59,22 @@ private slots:
 
 private:
     Ui::TimesSettingsWindow *ui;
+
+    /**
+     * @brief isValidTime validate if the given time QString is in the given range.
+     * @param time the time to validate
+     * @param min the range min value
+     * @param max the range max value
+     * @return
+     */
+    bool isValidTime(const QString& time, const QString& min, const QString& max);
+
+    /**
+     * @brief timeStringToInt converts given formatted string time to seconds.
+     * @param string the formatted time (hh:mm:ss)
+     * @return the number of the seconds
+     */
+    int timeStringToInt(const QString& string);
 };
 
 #endif // TIMESSETTINGSWINDOW_H

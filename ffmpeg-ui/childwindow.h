@@ -59,6 +59,12 @@ public:
      */
     void setNumberOfTriesToNextStep(int numberOfTriesToNextStep = 0);
 
+    /**
+     * @brief initWindow method called after each window change to allow it
+     * to initialize its view
+     */
+    virtual void initWindow();
+
 private:
     // Pointer to the main window
     MainWindow* mainWindow;

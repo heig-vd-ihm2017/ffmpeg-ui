@@ -38,3 +38,8 @@ void ChildWindow::setNumberOfTriesToNextStep(int numberOfTrisToNextStep)
 {
     this->numberOfTriesToNextStep = numberOfTrisToNextStep;
 }
+
+void ChildWindow::initWindow()
+{
+    // Do nothing by default
+}
