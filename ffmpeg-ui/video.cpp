@@ -27,10 +27,6 @@ QString Video::duration() const {
     hours = mins / 60;
     mins %= 60;
 
-    return QString("%1:%2:%3.%4")
-            .arg(
-                QString::number(hours),
-                QString::number(mins),
-                QString::number(secs),
-                QString::number((10 * us) / AV_TIME_BASE));
+    return QString().sprintf("%02d:%02d:%02d.%02d", hours, mins, secs, (100 * us) / AV_TIME_BASE);
+
 }

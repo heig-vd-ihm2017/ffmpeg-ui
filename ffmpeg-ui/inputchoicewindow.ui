@@ -91,7 +91,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window allows you to select a video input file you would like to cut.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Please select a video input file you would like to cut.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -119,10 +119,10 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>508</x>
-          <y>289</y>
-          <width>81</width>
-          <height>81</height>
+          <x>448</x>
+          <y>319</y>
+          <width>141</width>
+          <height>51</height>
          </rect>
         </property>
         <property name="text">
@@ -144,7 +144,7 @@
           <height>31</height>
          </rect>
         </property>
-        <property name="placeholderText" stdset="0">
+        <property name="placeholderText">
          <string>Choose an input file...</string>
         </property>
        </widget>

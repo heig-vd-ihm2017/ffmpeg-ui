@@ -91,7 +91,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This window allows you to set the times you would like to save the input video.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select the time range you would like to use to save the input video.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -106,11 +106,14 @@
           <x>10</x>
           <y>220</y>
           <width>581</width>
-          <height>16</height>
+          <height>41</height>
          </rect>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The end time is invalid. Verify that it is in the range and the it is after the start time.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The end time is invalid. It must follow the pattern hh:mm:ss:ff. Verify that it is in the range and that it is after the start time.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="tooltip">
@@ -119,10 +122,10 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>508</x>
-          <y>289</y>
-          <width>81</width>
-          <height>81</height>
+          <x>450</x>
+          <y>330</y>
+          <width>141</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="text">
@@ -139,13 +142,13 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>240</y>
+          <y>260</y>
           <width>581</width>
           <height>31</height>
          </rect>
         </property>
         <property name="placeholderText">
-         <string>Set the end time</string>
+         <string>Set the end time. Format: hh:mm:ss:ff</string>
         </property>
        </widget>
        <widget class="QLabel" name="properties">
@@ -226,13 +229,16 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>160</y>
+          <y>145</y>
           <width>581</width>
-          <height>16</height>
+          <height>31</height>
          </rect>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The start time is invalid. Verify that it is in the range and the it is before the end time.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The start time is invalid. It must follow the pattern hh:mm:ss.ff. Verify that it is in the range and that it is before the end time.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QPlainTextEdit" name="startTimeInput">
@@ -245,7 +251,7 @@
          </rect>
         </property>
         <property name="placeholderText">
-         <string>Set the start time</string>
+         <string>Set the start time. Format: hh:mm:ss:ff</string>
         </property>
        </widget>
       </widget>
