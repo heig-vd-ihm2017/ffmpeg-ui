@@ -40,7 +40,7 @@ void TimesSettingsWindow::initWindow()
     ui->inputFileValue->setText(filePath);
 
     // Set the input file duration
-    Video video("/Users/mathieu/Desktop/testffmpeg/test2.mp4");
+    Video video(getSettingsContainer()->getInputFilePath().toStdString().c_str());
     ui->lengthValue->setText(video.duration());
 
     // Set default values
