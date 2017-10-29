@@ -1,6 +1,8 @@
 #ifndef VIDEO_H
 #define VIDEO_H
 
+#include <QString>
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -13,15 +15,13 @@ extern "C"
 class Video {
 
 private:
-   AVFormatContext *fmt_ctx = NULL;
+    AVFormatContext *fmt_ctx = NULL;
 
 public:
-   Video(const char *filename);
-   ~Video();
+    Video(const char *filename);
+    ~Video();
 
-   int64_t duration() const;
-
-
+    QString duration() const;
 };
 
 #endif // VIDEO_H
