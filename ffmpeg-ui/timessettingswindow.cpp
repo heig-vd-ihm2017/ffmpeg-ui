@@ -42,6 +42,10 @@ void TimesSettingsWindow::initWindow()
     // Set the input file duration
     Video video("/Users/mathieu/Desktop/testffmpeg/test2.mp4");
     ui->lengthValue->setText(video.duration());
+
+    // Set default values
+    ui->startTimeInput->setPlainText("00:00:00.00");
+    ui->endTimeInput->setPlainText(video.duration());
 }
 
 void TimesSettingsWindow::on_back_clicked()
