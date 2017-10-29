@@ -42,6 +42,10 @@ void InputChoiceWindow::resetErrors()
     ui->tooltip->setHidden(true);
 }
 
+void InputChoiceWindow::initWindow() {
+    resetErrors();
+}
+
 void InputChoiceWindow::on_back_clicked()
 {
     resetErrors();
