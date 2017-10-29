@@ -32,24 +32,11 @@ void TimesSettingsWindow::initWindow()
 {
     // Set the input file path label
     QString filePath = getSettingsContainer()->getInputFilePath();
-    ui->inputFileLabel->setText(filePath);
+    ui->inputFileValue->setText(filePath);
 
+    // Set the input file duration
     Video video("/Users/mathieu/Desktop/testffmpeg/test2.mp4");
-    printf("%d\n", video.duration());
-
-    /*
-    // Call the ffprobe command line tool to retrieve the duration
-    QProcess process;
-
-    process.start("/usr/local/bin/ffprobe", QStringList() << "/Users/mathieu/Desktop/testffmpeg/test2.mp4");
-    process.waitForFinished();
-    QString output(process.readAllStandardError());
-
-    const QString videoStartTime = "00:00:00.00";
-    const QString videoEndTime = QRegularExpression("(?<=Duration\: ).*(?=, start)").match(output).captured();
-
-    ui->lengthValue->setText(videoEndTime);
-    */
+    ui->lengthValue->setText(video.duration());
 }
 
 void TimesSettingsWindow::on_back_clicked()
@@ -127,16 +114,20 @@ int TimesSettingsWindow::timeStringToInt(const QString &string)
     // hours, minutes, seconds and centiseconds
     int h, m, s, c;
 
+    // The time in cents
     int cents = -1;
 
+    // Try to read the time
     if (sscanf(string.toLatin1().data(), "%d:%d:%d.%d", &h, &m, &s, &c) >= 4)
     {
       cents = h *3600 * 100 + m * 60 * 100 + s * 100 + c;
     }
 
+    // If any value is wrong return -1
     if (h < 0 || h > 59 || m < 0 || m > 59 || s < 0 || s > 59 || c < 0 || c > 99) {
         return -1;
     }
 
+    // Return the read sum of tim or -1 if not every value could be read
     return cents;
 }
