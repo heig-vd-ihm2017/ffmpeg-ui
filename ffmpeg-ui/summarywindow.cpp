@@ -14,6 +14,16 @@ SummaryWindow::~SummaryWindow()
     delete ui;
 }
 
+void SummaryWindow::initWindow()
+{
+    // Set all data
+    ui->inputFileValue->setText(getSettingsContainer()->getInputFilePath());
+    ui->startTimeValue->setText(getSettingsContainer()->getStartTime());
+    ui->endTimeValue->setText(getSettingsContainer()->getEndTime());
+    ui->totalTimeValue->setText(getSettingsContainer()->getTotalTime());
+    ui->outputFileValue->setText(getSettingsContainer()->getOutputFilePath());
+}
+
 void SummaryWindow::on_back_clicked()
 {
     getMainWindow()->setCurrentWindow(MainWindow::OUTPUT_CHOICE_WINDOW);

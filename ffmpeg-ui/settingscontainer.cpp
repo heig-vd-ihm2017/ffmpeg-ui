@@ -49,6 +49,16 @@ void SettingsContainer::setOutputFilePath(const QString& outputFilePath)
     this->outputFilePath = outputFilePath;
 }
 
+QString SettingsContainer::getTotalTime() const
+{
+    return totalTime;
+}
+
+void SettingsContainer::setTotalTime(const QString &totalTime)
+{
+    this->totalTime = totalTime;
+}
+
 void SettingsContainer::reset() {
     inputFilePath = "";
     startTime = "";

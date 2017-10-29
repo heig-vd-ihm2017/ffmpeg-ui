@@ -75,6 +75,13 @@ private:
      * @return the number of the seconds
      */
     int timeStringToInt(const QString& string);
+
+    /**
+     * @brief timeIntToString converts given int to formatted string
+     * @param time the time as int
+     * @return the time as string
+     */
+    QString timeIntToString(int time);
 };
 
 #endif // TIMESSETTINGSWINDOW_H

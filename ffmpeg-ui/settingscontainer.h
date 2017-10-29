@@ -30,6 +30,10 @@ public:
 
     void setOutputFilePath(const QString& outputFilePath);
 
+    QString getTotalTime() const;
+
+    void setTotalTime(const QString& totalTime);
+
     void reset();
 
 private:
@@ -45,6 +49,9 @@ private:
 
     //! The output file
     QString outputFilePath;
+
+    //! The total time
+    QString totalTime;
 
 };
 
