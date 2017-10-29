@@ -56,4 +56,7 @@ FORMS += \
     summarywindow.ui \
     resultwindow.ui
 
+INCLUDEPATH += /usr/local/include
+LIBS += -L/usr/local/lib
+
 LIBS += -lavutil -lavcodec -lavformat -lswscale

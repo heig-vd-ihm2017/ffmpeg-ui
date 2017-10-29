@@ -3,6 +3,7 @@
 #include "ui_timessettingswindow.h"
 #include <qfiledialog.h>
 #include <qprocess.h>
+#include "video.h"
 
 TimesSettingsWindow::TimesSettingsWindow(QWidget *parent) :
     QWidget(parent),
@@ -33,6 +34,10 @@ void TimesSettingsWindow::initWindow()
     QString filePath = getSettingsContainer()->getInputFilePath();
     ui->inputFileLabel->setText(filePath);
 
+    Video video("/Users/mathieu/Desktop/testffmpeg/test2.mp4");
+    printf("%d\n", video.duration());
+
+    /*
     // Call the ffprobe command line tool to retrieve the duration
     QProcess process;
 
@@ -44,6 +49,7 @@ void TimesSettingsWindow::initWindow()
     const QString videoEndTime = QRegularExpression("(?<=Duration\: ).*(?=, start)").match(output).captured();
 
     ui->lengthValue->setText(videoEndTime);
+    */
 }
 
 void TimesSettingsWindow::on_back_clicked()
