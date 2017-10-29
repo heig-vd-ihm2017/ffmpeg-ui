@@ -36,6 +36,11 @@ public:
      */
     ~ResultWindow();
 
+    /**
+     * @brief initWindow init the window
+     */
+    void initWindow();
+
 private slots:
     /**
      * @brief on_restart_clicked Restart the whole process.
