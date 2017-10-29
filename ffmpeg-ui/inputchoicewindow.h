@@ -45,6 +45,8 @@ public:
      */
     void resetErrors();
 
+    void initWindow() override;
+
 private slots:
     /**
      * @brief on_back_clicked Go to the previous step.
