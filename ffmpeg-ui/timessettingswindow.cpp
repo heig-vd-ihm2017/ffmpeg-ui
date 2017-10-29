@@ -1,3 +1,8 @@
+/**
+    file: timessettingswindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "timessettingswindow.h"
 #include "ui_timessettingswindow.h"
@@ -88,6 +93,10 @@ void TimesSettingsWindow::on_next_clicked()
         getSettingsContainer()->setStartTime(startTime);
         getSettingsContainer()->setEndTime(endTime);
 
+        int totalTime = timeStringToInt(endTime) - timeStringToInt(startTime);
+        QString strTotalTime = timeIntToString(totalTime);
+        getSettingsContainer()->setTotalTime(strTotalTime);
+
         // Go to next window
         getMainWindow()->setCurrentWindow(MainWindow::OUTPUT_CHOICE_WINDOW);
     }
@@ -130,4 +139,17 @@ int TimesSettingsWindow::timeStringToInt(const QString &string)
 
     // Return the read sum of tim or -1 if not every value could be read
     return cents;
+}
+
+QString TimesSettingsWindow::timeIntToString(int time)
+{
+    int h, m, s, c;
+    s = time / 100;
+    c = time % 100;
+    m = s / 60;
+    s = s % 60;
+    h = m / 60;
+    m = m % 60;
+
+    return QString().sprintf("%02d:%02d:%02d.%02d", h, m, s, c);
 }

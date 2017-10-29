@@ -1,3 +1,8 @@
+/**
+    file: resultwindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "resultwindow.h"
 #include "ui_resultwindow.h"
@@ -12,6 +17,16 @@ ResultWindow::ResultWindow(QWidget *parent) :
 ResultWindow::~ResultWindow()
 {
     delete ui;
+}
+
+void ResultWindow::initWindow()
+{
+    ui->command->setText(
+                "ffmpeg -ss "
+                + getSettingsContainer()->getStartTime() + " -i "
+                + getSettingsContainer()->getInputFilePath() + " -t "
+                + getSettingsContainer()->getTotalTime() +" -c copy "
+                + getSettingsContainer()->getOutputFilePath());
 }
 
 void ResultWindow::on_restart_clicked()

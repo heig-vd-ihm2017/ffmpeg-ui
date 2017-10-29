@@ -1,3 +1,8 @@
+/**
+    file: childwindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef CHILDWINDOW_H
 #define CHILDWINDOW_H
 

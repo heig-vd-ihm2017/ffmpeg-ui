@@ -1,3 +1,8 @@
+/**
+    file: summarywindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef SUMMARYWINDOW_H
 #define SUMMARYWINDOW_H
 
@@ -33,6 +38,12 @@ public:
      * Destructor.
      */
     ~SummaryWindow();
+
+    /**
+     * @override
+     * @brief initWindow init the window
+     */
+    void initWindow();
 
 private slots:
     /**

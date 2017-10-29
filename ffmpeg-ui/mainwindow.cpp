@@ -1,3 +1,8 @@
+/**
+    file: mainwindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "settingscontainer.h"

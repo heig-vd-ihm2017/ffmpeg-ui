@@ -223,7 +223,7 @@
          <string>[The total time of the cut]</string>
         </property>
        </widget>
-       <widget class="QLabel" name="totalTimeLabel_2">
+       <widget class="QLabel" name="outputFileLabel">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -236,7 +236,7 @@
          <string>Output file:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="totalTimeValue_2">
+       <widget class="QLabel" name="outputFileValue">
         <property name="geometry">
          <rect>
           <x>120</x>

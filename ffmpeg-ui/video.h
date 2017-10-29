@@ -1,3 +1,8 @@
+/**
+    file: video.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef VIDEO_H
 #define VIDEO_H
 

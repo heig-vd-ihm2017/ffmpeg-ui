@@ -1,3 +1,8 @@
+/**
+    file: outputchoicewindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef OUTPUTCHOICEWINDOW_H
 #define OUTPUTCHOICEWINDOW_H
 

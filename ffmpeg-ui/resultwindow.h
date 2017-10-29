@@ -1,3 +1,8 @@
+/**
+    file: resultwindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef RESULTWINDOW_H
 #define RESULTWINDOW_H
 
@@ -35,6 +40,11 @@ public:
      * Destructor.
      */
     ~ResultWindow();
+
+    /**
+     * @brief initWindow init the window
+     */
+    void initWindow();
 
 private slots:
     /**

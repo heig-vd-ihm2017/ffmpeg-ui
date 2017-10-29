@@ -1,3 +1,8 @@
+/**
+    file: inputchoicewindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef INPUTCHOICEWINDOW_H
 #define INPUTCHOICEWINDOW_H
 

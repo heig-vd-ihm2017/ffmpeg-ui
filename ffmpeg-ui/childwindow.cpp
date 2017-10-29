@@ -1,3 +1,8 @@
+/**
+    file: childwindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "childwindow.h"
 #include "mainwindow.h"
 #include "settingscontainer.h"
