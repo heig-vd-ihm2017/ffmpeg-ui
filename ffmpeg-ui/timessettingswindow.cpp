@@ -44,8 +44,14 @@ void TimesSettingsWindow::initWindow()
     ui->lengthValue->setText(video.duration());
 
     // Set default values
-    ui->startTimeInput->setPlainText("00:00:00.00");
-    ui->endTimeInput->setPlainText(video.duration());
+    if (getSettingsContainer()->getStartTime().length() == 0) {
+        ui->startTimeInput->setPlainText("00:00:00.00");
+    }
+    if (getSettingsContainer()->getEndTime().length() == 0) {
+        ui->endTimeInput->setPlainText(video.duration());
+    }
+
+    resetErrors();
 }
 
 void TimesSettingsWindow::on_back_clicked()
