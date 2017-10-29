@@ -56,6 +56,12 @@ private slots:
      */
     void on_next_clicked();
 
+    /**
+     * @brief on_inputFileButton_clicked Allows to choose a file
+     */
+    void on_inputFileButton_clicked();
+
+
 private:
     Ui::InputChoiceWindow *ui;
 };
