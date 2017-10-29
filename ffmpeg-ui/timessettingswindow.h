@@ -1,3 +1,8 @@
+/**
+    file: timessettingswindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef TIMESSETTINGSWINDOW_H
 #define TIMESSETTINGSWINDOW_H
 

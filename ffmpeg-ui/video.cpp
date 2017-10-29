@@ -1,5 +1,9 @@
-#include "video.h"
+/**
+    file: video.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
 
+#include "video.h"
 #include <stdexcept>
 
 Video::Video(const char *filename) {

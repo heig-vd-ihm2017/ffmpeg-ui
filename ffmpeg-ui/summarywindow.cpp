@@ -1,3 +1,8 @@
+/**
+    file: summarywindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "summarywindow.h"
 #include "ui_summarywindow.h"

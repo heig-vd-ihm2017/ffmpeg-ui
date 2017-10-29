@@ -1,3 +1,8 @@
+/**
+    file: timessettingswindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "timessettingswindow.h"
 #include "ui_timessettingswindow.h"

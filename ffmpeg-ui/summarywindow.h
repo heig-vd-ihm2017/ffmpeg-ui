@@ -1,3 +1,8 @@
+/**
+    file: summarywindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef SUMMARYWINDOW_H
 #define SUMMARYWINDOW_H
 

@@ -1,3 +1,8 @@
+/**
+    file: resultwindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "resultwindow.h"
 #include "ui_resultwindow.h"

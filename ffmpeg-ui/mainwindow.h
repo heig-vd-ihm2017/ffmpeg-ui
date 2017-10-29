@@ -1,3 +1,8 @@
+/**
+    file: mainwindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 

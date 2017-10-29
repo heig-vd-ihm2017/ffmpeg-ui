@@ -1,3 +1,8 @@
+/**
+    file: inputchoicewindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "inputchoicewindow.h"
 #include "ui_inputchoicewindow.h"

@@ -1,3 +1,8 @@
+/**
+    file: outputchoicewindow.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "mainwindow.h"
 #include "outputchoicewindow.h"
 #include "ui_outputchoicewindow.h"

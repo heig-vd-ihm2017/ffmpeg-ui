@@ -1,3 +1,8 @@
+/**
+    file: resultwindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef RESULTWINDOW_H
 #define RESULTWINDOW_H
 

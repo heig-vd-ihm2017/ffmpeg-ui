@@ -1,3 +1,8 @@
+/**
+    file: settingscontainer.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include "settingscontainer.h"
 
 SettingsContainer::SettingsContainer() :

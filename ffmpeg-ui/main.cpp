@@ -1,3 +1,8 @@
+/**
+    file: main.cpp
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #include <QApplication>
 
 #include "mainwindow.h"

@@ -1,3 +1,8 @@
+/**
+    file: settingscontainer.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
+
 #ifndef SETTINGSCONTAINER_H
 #define SETTINGSCONTAINER_H
 
