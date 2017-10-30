@@ -22,7 +22,7 @@ ResultWindow::~ResultWindow()
 void ResultWindow::initWindow()
 {
     ui->command->setText(
-                "ffmpeg -ss "
+                "ffmpeg -y -ss "
                 + getSettingsContainer()->getStartTime() + " -i "
                 + getSettingsContainer()->getInputFilePath() + " -t "
                 + getSettingsContainer()->getTotalTime() +" -c copy "
