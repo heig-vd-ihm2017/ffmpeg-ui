@@ -51,6 +51,8 @@ public:
      */
     void initWindow();
 
+    static QRegularExpression PATTERN;
+
 private slots:
     /**
      * @brief on_back_clicked Go to the previous step.

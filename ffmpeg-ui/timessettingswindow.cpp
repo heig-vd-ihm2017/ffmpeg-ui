@@ -11,6 +11,8 @@
 #include "ui_timessettingswindow.h"
 #include "video.h"
 
+QRegularExpression TimesSettingsWindow::PATTERN("^[0-5][0-9]\\:[0-5][0-9]\\:[0-5][0-9]\\.[0-9][0-9]$");
+
 TimesSettingsWindow::TimesSettingsWindow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TimesSettingsWindow)
@@ -115,6 +117,10 @@ void TimesSettingsWindow::on_next_clicked()
 
 bool TimesSettingsWindow::isValidTime(const QString &time, const QString &min, const QString &max)
 {
+    if (!PATTERN.match(time).hasMatch()) {
+        return false;
+    }
+
     // Convert to integer time in seconds
     int timeCent = timeStringToInt(time);
 
