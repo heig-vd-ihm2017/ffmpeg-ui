@@ -16,16 +16,6 @@ OutputChoiceWindow::OutputChoiceWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // Fais crasher le programme car SettingsContainer n'est pas encore initialisé je crois...
-    /*
-    ui->inputFileValue->setPlainText(getSettingsContainer()->getInputFilePath());
-    ui->startTimeValue->setPlainText(getSettingsContainer()->getStartTime());
-    ui->endTimeValue->setPlainText(getSettingsContainer()->getEndTime());
-    // Le calcul ici est totalement faux
-    ui->totalTimeValue->setPlainText(getSettingsContainer()->getEndTime() - getSettingsContainer()->getStartTime());
-    ui->outputFileText->setPlainText(getSettingsContainer()->getOutputFilePath());
-    */
-
     resetErrors();
 }
 
@@ -45,6 +35,8 @@ void OutputChoiceWindow::resetErrors()
 
 void OutputChoiceWindow::initWindow()
 {
+    resetErrors();
+
     // Set data
     ui->inputFileValue->setText(getSettingsContainer()->getInputFilePath());
     ui->startTimeValue->setText(getSettingsContainer()->getStartTime());

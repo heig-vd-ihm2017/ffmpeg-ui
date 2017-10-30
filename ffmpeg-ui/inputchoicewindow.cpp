@@ -3,15 +3,14 @@
     authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
 */
 
-#include "mainwindow.h"
-#include "inputchoicewindow.h"
-#include "ui_inputchoicewindow.h"
-
-#include "video.h"
-
 #include <QFileDialog>
 #include <QProcess>
 #include <stdexcept>
+
+#include "mainwindow.h"
+#include "inputchoicewindow.h"
+#include "ui_inputchoicewindow.h"
+#include "video.h"
 
 InputChoiceWindow::InputChoiceWindow(QWidget *parent) :
     QWidget(parent),
@@ -19,11 +18,6 @@ InputChoiceWindow::InputChoiceWindow(QWidget *parent) :
     ui(new Ui::InputChoiceWindow)
 {
     ui->setupUi(this);
-
-    // Fais crasher le programme car SettingsContainer n'est pas encore initialisé je crois...
-    /*
-    ui->inputFileText->setPlainText(getSettingsContainer()->getInputFilePath());
-    */
 
     resetErrors();
 }
@@ -44,6 +38,8 @@ void InputChoiceWindow::resetErrors()
 
 void InputChoiceWindow::initWindow() {
     resetErrors();
+
+    ui->inputFileText->setPlainText(getSettingsContainer()->getInputFilePath());
 }
 
 void InputChoiceWindow::on_back_clicked()

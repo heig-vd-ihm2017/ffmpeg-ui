@@ -10,6 +10,10 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QPlainTextEdit>
+/**
+    file: inputchoicewindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
 
 #include <childwindow.h>
 

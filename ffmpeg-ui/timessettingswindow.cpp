@@ -3,11 +3,12 @@
     authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
 */
 
+#include <qfiledialog.h>
+#include <qprocess.h>
+
 #include "mainwindow.h"
 #include "timessettingswindow.h"
 #include "ui_timessettingswindow.h"
-#include <qfiledialog.h>
-#include <qprocess.h>
 #include "video.h"
 
 TimesSettingsWindow::TimesSettingsWindow(QWidget *parent) :

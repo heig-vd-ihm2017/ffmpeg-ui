@@ -145,7 +145,7 @@
          </rect>
         </property>
         <property name="placeholderText">
-         <string>Choose an input file...</string>
+         <string>Choose an output file...</string>
         </property>
        </widget>
        <widget class="QPushButton" name="outputFileButton">

@@ -4,6 +4,7 @@
 */
 
 #include "video.h"
+
 #include <stdexcept>
 
 Video::Video(const char *filename) {
