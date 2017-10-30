@@ -8,6 +8,7 @@
 #include "ui_outputchoicewindow.h"
 
 #include <QFileDialog>
+#include <QMessageBox>
 
 OutputChoiceWindow::OutputChoiceWindow(QWidget *parent) :
     QWidget(parent),
@@ -65,25 +66,30 @@ void OutputChoiceWindow::on_next_clicked()
     QFileInfo outfi(outputFilePath);
     QString outext = outfi.suffix();
 
+    if(outfi.exists()) {
+        QMessageBox::StandardButton reply;
+        reply = QMessageBox::question(this, "Test", "Are you sure that you want to override this file?",
+                                      QMessageBox::Yes|QMessageBox::No);
+        if (reply == QMessageBox::Yes) {
+            // Check if the output file is valid
+            if (inext == outext) {
+                resetErrors();
 
-    // Check if the output file is valid
-    if (!outfi.exists() && inext == outext) {
+                // Save the settings
+                getSettingsContainer()->setOutputFilePath(outputFilePath);
 
-        resetErrors();
+                // Go to next window
+                getMainWindow()->setCurrentWindow(MainWindow::SUMMARY_WINDOW);
+            }
+            else {
 
-        // Save the settings
-        getSettingsContainer()->setOutputFilePath(outputFilePath);
+                // Show errors
+                ui->error->setHidden(false);
 
-        // Go to next window
-        getMainWindow()->setCurrentWindow(MainWindow::SUMMARY_WINDOW);
-    }
-    else {
-
-        // Show errors
-        ui->error->setHidden(false);
-
-        if (getNumberOfTriesToNextStep() >= 2) {
-            ui->tooltip->setHidden(false);
+                if (getNumberOfTriesToNextStep() >= 2) {
+                    ui->tooltip->setHidden(false);
+                }
+            }
         }
     }
 }
