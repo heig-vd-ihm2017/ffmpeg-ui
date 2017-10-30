@@ -7,6 +7,10 @@
 #define OUTPUTCHOICEWINDOW_H
 
 #include <QWidget>
+/**
+    file: outputchoicewindow.h
+    authors: Ludovic Delafontaine, Sathiya Kirushnapillai, Mathieu Monteverde
+*/
 
 #include <childwindow.h>
 

@@ -12,6 +12,7 @@ FFMPEG is a powerful tool. However, it is mostly used by command line and as so,
 As in the project will create a program to use some aspects of FFMPEG with a nice and user-friendly UI.
 
 As FFMPEG has many many options, we will stay focused on the following elements:
+
 * A menu item allowing to exit the application
 * A button allowing to select an input video file
 * A text field allowing to edit the name of the input file
@@ -22,6 +23,7 @@ As FFMPEG has many many options, we will stay focused on the following elements:
 * A text field showing the command line which should run ffmpeg to cut the video
 
 The UI must give feedback about the following points as well:
+
 * Whether the input file is valid
 * The duration of the input video
 * The start and stop time selected
@@ -34,6 +36,7 @@ As FFMPEG is normally used by command line, it is mostly for powerusers. As we w
 We decided to cut the whole process for cutting the video file into sequences. This allow the user to focus on one thing at a time and we can validate the step before continuing in the process.
 
 We came to the following process:
+
 * Introduction
 * Choose the input file
 * Set the start and end times for the given input file
@@ -55,6 +58,8 @@ This step presents the program, what is it for and general considerations.
 ### Input choice step
 This step allows the user to select the input file.
 
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/intro.png?raw=true" alt="Drawing" style="height: 50%;"/>
+
 The following feedbacks will ensure that the user can continue to the next step:
 * Can we access to the input file ?
 * Is the input file valid ?
@@ -62,7 +67,10 @@ The following feedbacks will ensure that the user can continue to the next step:
 ### Times settings step
 This step shows the input file properties and allows the user to select the start time and the end time to cut the video.
 
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/times.png?raw=true" alt="Drawing" style="height: 50%;"/>
+
 The following feedbacks will ensure that the user can continue to the next step:
+
 * Is the start time inside the total length of the video file ?
 * Is the top time inside the total length of the video file ?
 * Is the start time before the end time (no overlapping) ?
@@ -70,7 +78,10 @@ The following feedbacks will ensure that the user can continue to the next step:
 ### Output choice step
 This step shows the input file with its cutting times and total time of the potential output video. The user can select the desired output file.
 
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/output.png?raw=true" alt="Drawing" style="height: 50%;"/>
+
 The following feedbacks will ensure that the user can continue to the next step:
+
 * Can we access to the output file ?
 * Is the input filename valid ?
 * Is there any files that have the same name ?
@@ -78,14 +89,20 @@ The following feedbacks will ensure that the user can continue to the next step:
 
 ### Summary and confirmation step
 This step shows the summary of the whole process:
+
 * Input file with its properties
 * Output file with the cutting and total times
 
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/summary.png?raw=true" alt="Drawing" style="height: 50%;"/>
+
 The following feedbacks will ensure that the user can continue to the next step:
+
 * None, only need to confirm or go back to edit something.
 
 ### Result step
 This step shows the FFMPEG's command line to launch to cut the input file to the new output file.
+
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/results.png?raw=true" alt="Drawing" style="height: 50%;"/>
 
 The user is invited to restart the process or exit the application.
 
