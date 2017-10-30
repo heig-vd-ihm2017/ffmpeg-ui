@@ -68,7 +68,7 @@ void OutputChoiceWindow::on_next_clicked()
 
     if(outfi.exists()) {
         QMessageBox::StandardButton reply;
-        reply = QMessageBox::question(this, "Test", "Are you sure that you want to override this file?",
+        reply = QMessageBox::question(this, "Confirmation", "Are you sure that you want to override this file?",
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes) {
             // Check if the output file is valid
