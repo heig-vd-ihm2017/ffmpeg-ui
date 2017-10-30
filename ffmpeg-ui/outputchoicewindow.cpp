@@ -65,8 +65,9 @@ void OutputChoiceWindow::on_next_clicked()
     QFileInfo outfi(outputFilePath);
     QString outext = outfi.suffix();
 
+
     // Check if the output file is valid
-    if (inext == outext) {
+    if (!outfi.exists() && inext == outext) {
 
         resetErrors();
 
