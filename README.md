@@ -32,6 +32,8 @@ The UI must give feedback about the following points as well:
 ## Disclaimer
 As FFMPEG is normally used by command line, it is mostly for powerusers. As we wanted to deliver a program that everyone can use, the users used to FFMPEG may find our application way too simplish and heavy.
 
+This program has been tested on Mac OS and Linux with ffmpeg installed. It should work on Windows as well but has not been tested.
+
 ## UI/UX considerations
 We decided to cut the whole process for cutting the video file into sequences. This allow the user to focus on one thing at a time and we can validate the step before continuing in the process.
 
