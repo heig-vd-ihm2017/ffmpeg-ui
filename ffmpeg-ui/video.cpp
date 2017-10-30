@@ -14,6 +14,10 @@ Video::Video(const char *filename) {
     if (avformat_open_input(&fmt_ctx, filename, NULL, NULL)) {
         throw std::runtime_error("Cannot open input file");
     }
+
+    if(fmt_ctx->duration / AV_TIME_BASE < 0) {
+        throw std::runtime_error("Cannot open input file");
+    }
 }
 
 Video::~Video() {
