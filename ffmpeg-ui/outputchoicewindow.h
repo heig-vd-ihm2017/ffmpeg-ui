@@ -42,6 +42,11 @@ public:
      */
     void resetErrors();
 
+    /**
+     * @brief initWindow init the window
+     */
+    void initWindow();
+
 private slots:
     /**
      * @brief on_back_clicked Go to the previous step.
