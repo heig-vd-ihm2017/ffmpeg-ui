@@ -43,6 +43,7 @@ void OutputChoiceWindow::initWindow()
     ui->startTimeValue->setText(getSettingsContainer()->getStartTime());
     ui->totalTimeValue->setText(getSettingsContainer()->getTotalTime());
     ui->endTimeValue->setText(getSettingsContainer()->getEndTime());
+    ui->outputFileText->setPlainText(getSettingsContainer()->getOutputFilePath());
 }
 
 
@@ -61,7 +62,6 @@ void OutputChoiceWindow::on_next_clicked()
     QString input = getSettingsContainer()->getInputFilePath();
     QFileInfo infi(input);
     QString inext = infi.suffix();
-
 
     QFileInfo outfi(outputFilePath);
     QString outext = outfi.suffix();

@@ -69,4 +69,5 @@ void SettingsContainer::reset() {
     startTime = "";
     endTime = "";
     outputFilePath = "";
+    totalTime = "";
 }
