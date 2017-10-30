@@ -55,10 +55,12 @@ At every step, the user should be able to go back to edit previous steps.
 ### Introduction step
 This step presents the program, what is it for and general considerations.
 
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/intro.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
+
 ### Input choice step
 This step allows the user to select the input file.
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/intro.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/input.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The following feedbacks will ensure that the user can continue to the next step:
 * Can we access to the input file ?
