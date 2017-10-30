@@ -92,6 +92,27 @@ void OutputChoiceWindow::on_next_clicked()
             }
         }
     }
+    else {
+        // Check if the output file is valid
+        if (inext == outext) {
+            resetErrors();
+
+            // Save the settings
+            getSettingsContainer()->setOutputFilePath(outputFilePath);
+
+            // Go to next window
+            getMainWindow()->setCurrentWindow(MainWindow::SUMMARY_WINDOW);
+        }
+        else {
+
+            // Show errors
+            ui->error->setHidden(false);
+
+            if (getNumberOfTriesToNextStep() >= 2) {
+                ui->tooltip->setHidden(false);
+            }
+        }
+    }
 }
 
 void OutputChoiceWindow::on_outputFileButton_clicked() {
