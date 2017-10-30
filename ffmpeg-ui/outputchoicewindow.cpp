@@ -56,8 +56,16 @@ void OutputChoiceWindow::on_next_clicked()
     // Get the inputs
     QString outputFilePath = ui->outputFileText->toPlainText();
 
+    QString input = getSettingsContainer()->getInputFilePath();
+    QFileInfo infi(input);
+    QString inext = infi.suffix();
+
+
+    QFileInfo outfi(outputFilePath);
+    QString outext = outfi.suffix();
+
     // Check if the output file is valid
-    if (true) {
+    if (inext == outext) {
 
         resetErrors();
 
@@ -80,17 +88,15 @@ void OutputChoiceWindow::on_next_clicked()
 
 void OutputChoiceWindow::on_outputFileButton_clicked() {
 
+    // Get input ext
     QString input = getSettingsContainer()->getInputFilePath();
-
     QFileInfo fi(input);
-    QString ext = fi.completeSuffix();
-
-    printf(ext.toStdString().c_str());
+    QString ext = fi.suffix();
 
     // Allows to select file
     QString filename = QFileDialog::getSaveFileName(this, tr("Save File"),
                                 "/home",
-                                tr(ext.toStdString().c_str()));
+                                tr(QString("Videos (*.%1)").arg(ext).toStdString().c_str()));
 
     // Set the plain text edit
     ui->outputFileText->document()->setPlainText(filename);
