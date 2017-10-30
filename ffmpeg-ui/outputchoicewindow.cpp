@@ -7,6 +7,8 @@
 #include "outputchoicewindow.h"
 #include "ui_outputchoicewindow.h"
 
+#include <QFileDialog>
+
 OutputChoiceWindow::OutputChoiceWindow(QWidget *parent) :
     QWidget(parent),
     ChildWindow(),
@@ -74,4 +76,22 @@ void OutputChoiceWindow::on_next_clicked()
             ui->tooltip->setHidden(false);
         }
     }
+}
+
+void OutputChoiceWindow::on_outputFileButton_clicked() {
+
+    QString input = getSettingsContainer()->getInputFilePath();
+
+    QFileInfo fi(input);
+    QString ext = fi.completeSuffix();
+
+    printf(ext.toStdString().c_str());
+
+    // Allows to select file
+    QString filename = QFileDialog::getSaveFileName(this, tr("Save File"),
+                                "/home",
+                                tr(ext.toStdString().c_str()));
+
+    // Set the plain text edit
+    ui->outputFileText->document()->setPlainText(filename);
 }

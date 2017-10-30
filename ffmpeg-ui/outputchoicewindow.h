@@ -53,6 +53,11 @@ private slots:
      */
     void on_next_clicked();
 
+    /**
+     * @brief on_outputFileButton_clicked Allows to choose a path
+     */
+    void on_outputFileButton_clicked();
+
 private:
     Ui::OutputChoiceWindow *ui;
 };
