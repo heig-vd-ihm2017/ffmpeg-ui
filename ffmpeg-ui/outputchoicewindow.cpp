@@ -43,6 +43,15 @@ void OutputChoiceWindow::resetErrors()
     ui->tooltip->setHidden(true);
 }
 
+void OutputChoiceWindow::initWindow()
+{
+    // Set data
+    ui->inputFileValue->setText(getSettingsContainer()->getInputFilePath());
+    ui->startTimeValue->setText(getSettingsContainer()->getStartTime());
+    ui->totalTimeValue->setText(getSettingsContainer()->getTotalTime());
+    ui->endTimeValue->setText(getSettingsContainer()->getEndTime());
+}
+
 
 void OutputChoiceWindow::on_back_clicked()
 {
