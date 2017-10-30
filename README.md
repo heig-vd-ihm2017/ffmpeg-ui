@@ -58,7 +58,7 @@ This step presents the program, what is it for and general considerations.
 ### Input choice step
 This step allows the user to select the input file.
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/intro.png?raw=true" alt="Drawing" style="height: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/intro.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The following feedbacks will ensure that the user can continue to the next step:
 * Can we access to the input file ?
@@ -67,18 +67,18 @@ The following feedbacks will ensure that the user can continue to the next step:
 ### Times settings step
 This step shows the input file properties and allows the user to select the start time and the end time to cut the video.
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/times.png?raw=true" alt="Drawing" style="height: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/times.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The following feedbacks will ensure that the user can continue to the next step:
 
 * Is the start time inside the total length of the video file ?
-* Is the top time inside the total length of the video file ?
+* Is the stop time inside the total length of the video file ?
 * Is the start time before the end time (no overlapping) ?
 
 ### Output choice step
 This step shows the input file with its cutting times and total time of the potential output video. The user can select the desired output file.
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/output.png?raw=true" alt="Drawing" style="height: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/output.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The following feedbacks will ensure that the user can continue to the next step:
 
@@ -93,7 +93,7 @@ This step shows the summary of the whole process:
 * Input file with its properties
 * Output file with the cutting and total times
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/summary.png?raw=true" alt="Drawing" style="height: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/summary.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The following feedbacks will ensure that the user can continue to the next step:
 
@@ -102,7 +102,7 @@ The following feedbacks will ensure that the user can continue to the next step:
 ### Result step
 This step shows the FFMPEG's command line to launch to cut the input file to the new output file.
 
-<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/results.png?raw=true" alt="Drawing" style="height: 50%;"/>
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/results.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
 
 The user is invited to restart the process or exit the application.
 
