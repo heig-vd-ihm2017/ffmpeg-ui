@@ -4,7 +4,7 @@ A simple frontend application for FFMPEG made in Qt tending to have good UI/UX p
 This project is conducted for the course "IHM-2017", at HEIG-VD, Switzerland.
 
 * Teacher: Andres Perez-Uribe
-* Authors: Ludovic Delafontaine, Sathiya Kirushnapillai & Matthieu Monteverde
+* Authors: Ludovic Delafontaine, Sathiya Kirushnapillai & Mathieu Monteverde
 
 ## Introduction
 FFMPEG is a powerful tool. However, it is mostly used by command line and as so, not really user-friendly.
