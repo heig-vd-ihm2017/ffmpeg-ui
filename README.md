@@ -58,7 +58,6 @@ This step allows the user to select the input file.
 The following feedbacks will ensure that the user can continue to the next step:
 * Can we access to the input file ?
 * Is the input file valid ?
-* Can we access to needed properties of the input file ?
 
 ### Times settings step
 This step shows the input file properties and allows the user to select the start time and the end time to cut the video.
@@ -88,7 +87,7 @@ The following feedbacks will ensure that the user can continue to the next step:
 ### Result step
 This step shows the FFMPEG's command line to launch to cut the input file to the new output file.
 
-The user is invited to restart the process or go back to edit something.
+The user is invited to restart the process or exit the application.
 
 ## Technical details
 * This application was made with [Qt](https://www.qt.io/)
