@@ -50,6 +50,10 @@ If there are errors, a message will be shown inside the layout to indicate what 
 
 If the user presses more than two times the "Continue" button when there are errors, a more intrusive feedback will appear to ensure the user has seen the errors (pop-up, tooltip, etc.).
 
+Here is an example where the user did some mistakes:
+
+<img src="https://github.com/heig-vd-ihm2017/ffmpeg-ui/blob/master/images/errors.png?raw=true" alt="Drawing" style="max-width: 50%;"/>
+
 At every step, the user should be able to go back to edit previous steps.
 
 ### Introduction step
