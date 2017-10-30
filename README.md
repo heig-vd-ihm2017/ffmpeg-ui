@@ -85,7 +85,6 @@ This step shows the input file with its cutting times and total time of the pote
 The following feedbacks will ensure that the user can continue to the next step:
 
 * Can we access to the output file ?
-* Is the input filename valid ?
 * Is there any files that have the same name ?
 * If there is a file with the same name, does the program alerts the user that he is about to override the file ?
 
